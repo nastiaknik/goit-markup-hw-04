@@ -306,6 +306,7 @@ img {
 }
 
 .team-member-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: var(--secondary-font-size);
   line-height: calc(19 / 16);
@@ -314,7 +315,6 @@ img {
 }
 
 .job-position {
-  margin-top: 10px;
   margin-bottom: 16px;
   color: var(--secondary-color-font);
   font-size: var(--secondary-font-size);
@@ -329,26 +329,29 @@ img {
   justify-content: center;
   gap: 10px;
 }
+.social-item {
+  width: 44px;
+  height: 44px;
+}
 
 .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   background-color: var(--white-color);
   border-radius: 50%;
 }
 .social-icon {
   fill: var(--grey-icon-color);
 }
-
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
 }
 .social-link:hover .social-icon,
-.social-link:hover .social-icon {
+.social-link:focus .social-icon {
   fill: var(--white-color);
 }
 
@@ -363,12 +366,18 @@ img {
   justify-content: center;
   gap: 30px;
 }
+
+.client-item {
+  width: 170px;
+  height: 92px;
+}
+
 .client-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--grey-icon-color);
   border-radius: 4px;
 }
@@ -393,6 +402,7 @@ img {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 .logo-footer {
   margin-bottom: 20px;
@@ -431,7 +441,6 @@ img {
 
 .join {
   margin-left: 70px;
-  padding-top: 12px;
 }
 .text-join {
   margin-bottom: 20px;
@@ -446,12 +455,16 @@ img {
   display: flex;
   gap: 10px;
 }
+.social-item-footer {
+  width: 44px;
+  height: 44px;
+}
 .social-link-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   background-color: var(--grey-bg-icon);
   border-radius: 50%;
 }
@@ -518,7 +531,11 @@ flex-basis: calc((100% - 30px) / 3);} */
   margin-bottom: 30px;
 } */
 
-.project-card:hover {
+.project-link {
+  display: block;
+}
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
